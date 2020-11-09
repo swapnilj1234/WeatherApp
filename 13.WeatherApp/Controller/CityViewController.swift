@@ -10,12 +10,23 @@ import UIKit
 
 class CityViewController: UIViewController {
 
+    
+    @IBOutlet weak var cityText: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
       
     }
     
-
+    @IBAction func getWeather(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func BackButton(_ sender: AnyObject) {
+        self.dismiss(animated:true,completion:nil)
+        
+    }
+    
   
 }

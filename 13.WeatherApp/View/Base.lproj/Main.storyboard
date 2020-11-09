@@ -24,7 +24,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8Ml-DB-ZVq" kind="show" id="fHl-Un-Gk7"/>
+                                    <segue destination="8Ml-DB-ZVq" kind="presentation" id="xDJ-OD-89M"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alF-jg-bEt">
@@ -108,12 +108,26 @@
                                 <state key="normal" title="Get">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="getWeather:" destination="8Ml-DB-ZVq" eventType="touchUpInside" id="l95-Ce-Kje"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eav-wD-R6t">
+                                <rect key="frame" x="20" y="30" width="17" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="backward.end" catalog="system"/>
+                                <connections>
+                                    <action selector="BackButton:" destination="8Ml-DB-ZVq" eventType="touchUpInside" id="iz1-zr-Cyj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.095746266226954535" green="0.54780040871748048" blue="0.75233978426395942" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PLp-zC-2jk" firstAttribute="leading" secondItem="r8j-Ez-PfV" secondAttribute="leading" constant="60" id="RBs-MT-Hre"/>
+                            <constraint firstItem="eav-wD-R6t" firstAttribute="leading" secondItem="r8j-Ez-PfV" secondAttribute="leading" constant="20" id="ViF-3i-764"/>
                             <constraint firstItem="PLp-zC-2jk" firstAttribute="top" secondItem="r8j-Ez-PfV" secondAttribute="top" constant="197" id="aYE-U2-qYd"/>
+                            <constraint firstItem="eav-wD-R6t" firstAttribute="top" secondItem="r8j-Ez-PfV" secondAttribute="top" constant="30" id="cij-lA-Kb5"/>
                             <constraint firstItem="NMd-zq-tld" firstAttribute="centerY" secondItem="dhp-oZ-RXM" secondAttribute="centerY" id="gMM-h4-AWs"/>
                             <constraint firstItem="NMd-zq-tld" firstAttribute="centerX" secondItem="dhp-oZ-RXM" secondAttribute="centerX" id="mwO-TX-Tnv"/>
                             <constraint firstItem="r8j-Ez-PfV" firstAttribute="trailing" secondItem="PLp-zC-2jk" secondAttribute="trailing" constant="70" id="xDX-eR-l57"/>
@@ -121,13 +135,17 @@
                         <viewLayoutGuide key="safeArea" id="r8j-Ez-PfV"/>
                     </view>
                     <navigationItem key="navigationItem" id="pE6-zE-huv"/>
+                    <connections>
+                        <outlet property="cityText" destination="PLp-zC-2jk" id="rat-aI-aeR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ccL-fd-Fbo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="779.71014492753625" y="97.767857142857139"/>
+            <point key="canvasLocation" x="852" y="98"/>
         </scene>
     </scenes>
     <resources>
+        <image name="backward.end" catalog="system" width="64" height="60"/>
         <image name="paperplane.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
