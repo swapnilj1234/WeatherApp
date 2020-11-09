@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--City View Controller-->
         <scene sceneID="dAj-rW-3LU">
             <objects>
-                <viewController id="8Ml-DB-ZVq" sceneMemberID="viewController">
+                <viewController id="8Ml-DB-ZVq" customClass="CityViewController" customModule="_3_WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dhp-oZ-RXM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
